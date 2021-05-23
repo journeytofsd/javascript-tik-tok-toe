@@ -1,11 +1,6 @@
 pipeline {
     agent any
     stages {
-      stage('Example Checkout') {
-            steps {
-                echo 'Executing the stage: Build'
-            }
-        }
         stage('Example Build') {
             steps {
                 echo 'Executing the stage: Build'
