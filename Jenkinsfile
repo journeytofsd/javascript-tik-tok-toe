@@ -16,5 +16,10 @@ pipeline {
                  echo 'Executing the stage: Deploy'
             }
         }
+        post { 
+        always { 
+            start https://journeytofsd.github.io/javascript-tik-tok-toe/
+        }
+    }
     }
 }
