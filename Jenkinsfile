@@ -18,7 +18,7 @@ pipeline {
         }
         post { 
         always { 
-            start https://journeytofsd.github.io/javascript-tik-tok-toe/
+            println 'https://journeytofsd.github.io/javascript-tik-tok-toe/'.toURL().text
         }
     }
     }
