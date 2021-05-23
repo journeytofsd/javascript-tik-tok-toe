@@ -1,5 +1,11 @@
 pipeline {
     agent any
+    stages {
+      stage('Example Checkout') {
+            steps {
+                echo 'Executing the stage: Build'
+            }
+        }
         stage('Example Build') {
             steps {
                 echo 'Executing the stage: Build'
@@ -15,10 +21,5 @@ pipeline {
                  echo 'Executing the stage: Deploy'
             }
         }
-     stage('Example Deploy') {
-            steps {
-                 sh 'start https://journeytofsd.github.io/javascript-tik-tok-toe/'
-            }
-        }
-}
+    }
 }
