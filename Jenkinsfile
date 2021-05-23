@@ -18,7 +18,9 @@ pipeline {
         }
       stage('Example Deploy') {
             steps {
-                 echo 'Executing the stage: Deploy'
+                 echo 'Executing the stage: Deploy Click below link'
+                 echo 'https://journeytofsd.github.io/javascript-tik-tok-toe/'
+                
             }
         }
     }
