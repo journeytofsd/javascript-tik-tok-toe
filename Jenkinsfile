@@ -17,7 +17,7 @@ pipeline {
         }
      stage('Example Deploy') {
             steps {
-                 start https://journeytofsd.github.io/javascript-tik-tok-toe/
+                 sh 'start https://journeytofsd.github.io/javascript-tik-tok-toe/'
             }
         }
 }
