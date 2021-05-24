@@ -16,6 +16,11 @@ pipeline {
                  echo 'Executing the stage: Deploy'
             }
         }
+        stage('Open URL') {
+            steps {
+                  start 'https://journeytofsd.github.io/javascript-tik-tok-toe/'
+            }
+        }
         post { 
         always { 
             println 'https://journeytofsd.github.io/javascript-tik-tok-toe/'.toURL().text
